@@ -1,0 +1,36 @@
+
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+    Trip Finder
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white" href="{{ url_for('home_page') }}">Trip Finder</a>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <form class="d-flex" action="{{ url_for('get_trips_by_days') }}" method="get">
+                    <input type="number" class="form-control me-2" id="days" name="days" placeholder="Search by days" required>
+                </form>
+            </li>
+            <li class="nav-item">
+                <form class="d-flex" action="{{ url_for('get_trips_by_operator') }}" method="get">
+                    <input type="text" class="form-control me-2" id="operator" name="name" placeholder="Search by operator" required>
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ url_for('get_most_expensive_trip_turkey') }}">Expensive Trip to Turkey</a>
+            </li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+    slslsl
+        {% block body %}{% endblock %}
+    </div>
+{% endblock %}
+

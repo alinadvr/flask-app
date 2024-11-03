@@ -1,0 +1,85 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.divider {
+    height: 20px;
+    width: 2px;
+    border-radius: 10px;
+    background-color: #479ab1;
+}
+
+a {
+    color: #007899;
+}
+
+table {
+    margin: 0 auto;
+    min-width: 40%;
+}
+
+table th, table td {
+    padding: 0.75rem 1rem;
+}
+
+table th:not(:last-child), table td:not(:last-child) {
+    border-right: 1px solid lightgray;
+}
+
+table th, table tr:not(:last-child) td {
+    border-bottom: 1px solid lightgray;
+}
+
+input {
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    border: none;
+}
+
+.not-found_container {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.not-found_container #emoji {
+    rotate: 90deg;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 8rem;
+    color: lightblue;
+}
+
+.not-found_container .desc {
+    font-size: 1.25rem;
+    margin: 0 1.25rem 0 0;
+    color: lightblue;
+}
